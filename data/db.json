@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "id": "2",
+      "title": "A Day in the Life",
+      "body": "Sharing my daily experiences and thoughts in tech and life. Omo this life na step by step sha so calms I go gist una very soon",
+      "author": "Chibyke"
+    },
+    {
+      "id": "3",
+      "title": "Tech Trends 2024",
+      "body": "An overview of the latest trends in technology for the year 2024.",
+      "author": "Chidex"
+    }
+  ]
+}
