@@ -8,14 +8,18 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch("http://localhost:8000/blogs/" + id);
+  } = useFetch('https://my-json-server.typicode.com/OguajanmaChiamaka7/React-Blog/blogs/' + id);
   const navigate = useNavigate();
 
   const handleclick = () => {
-    fetch("http://localhost:8000/blogs/" + blog.id, {
-      method: "DELETE",
-    }).then(() => {
-      navigate("/"); // ✅ 
+    fetch(
+      'https://my-json-server.typicode.com/OguajanmaChiamaka7/React-Blog/blogs/' +
+        blog.id,
+      {
+        method: "DELETE",
+      }
+    ).then(() => {
+      navigate("/"); // ✅
     });
   }; // ✅ 
   return (
