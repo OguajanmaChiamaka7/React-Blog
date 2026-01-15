@@ -8,12 +8,15 @@ const BlogDetails = () => {
     data: blog,
     error,
     isPending,
-  } = useFetch('https://my-json-server.typicode.com/OguajanmaChiamaka7/React-Blog/blogs/' + id);
+  } = useFetch(
+    "https://my-json-server.typicode.com/OguajanmaChiamaka7/React-Blog/blogs/" +
+      id
+  );
   const navigate = useNavigate();
 
   const handleclick = () => {
     fetch(
-      'https://my-json-server.typicode.com/OguajanmaChiamaka7/React-Blog/blogs/' +
+      "https://my-json-server.typicode.com/OguajanmaChiamaka7/React-Blog/blogs/" +
         blog.id,
       {
         method: "DELETE",
@@ -21,7 +24,7 @@ const BlogDetails = () => {
     ).then(() => {
       navigate("/"); // ✅
     });
-  }; // ✅ 
+  }; // ✅
   return (
     <div className="blog-details">
       {isPending && <div>Loading...</div>}
@@ -36,6 +39,6 @@ const BlogDetails = () => {
       )}
     </div>
   );
-}; 
+};
 
 export default BlogDetails;
